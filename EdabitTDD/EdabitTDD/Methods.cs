@@ -8,12 +8,55 @@ namespace EdabitTDD
 {
     public class Methods
     {
-        public static int Convert(int minutes)
+        public int Convert(int minutes)
         {
             return minutes * 60;
         }
 
-        public static int RecursiveFactorial(int a)
+        public int MinutesToSeconds(int minutesValue)
+        {
+            return minutesValue * 60;
+        }
+
+        internal bool LessThan100(int firstNumber, int secondNumber)
+        {
+            return (firstNumber + secondNumber < 100);
+        }
+
+        internal bool FlipTheBoolean(bool myBool)
+        {
+            return !myBool;
+        }
+
+        internal string ReturnSomethingToMe(string inputValue)
+        {
+            return $"something {inputValue}";
+        }
+
+        internal int AgeToDaysIn365EachYear(int inputAgeValue)
+        {
+            return inputAgeValue * 365;
+        }
+
+        public int? SumPolygon(int num)
+        {
+            if (num < 3)
+                return null;
+            else
+                return (num - 2) * 180;
+        }
+
+        public int[] MultiplyByLength(int[] arr)
+        {
+            int[] result = new int[arr.Length];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                result[i] = arr[i] * arr.Length;
+            }
+            return result;
+        }
+
+        public int RecursiveFactorial(int a)
         {
             if (a == 0) return 1;
 
@@ -23,7 +66,7 @@ namespace EdabitTDD
 
         //4 -> = 4 * (3 -> = 3* (2 -> = 2 * (1 = 1* (1)
 
-        public static string[] ChangePosition(int position, string current)
+        public string[] ChangePosition(int position, string current)
         {
             int currentPosition = position;
             return  ChangePosition(currentPosition - 1, current); 
@@ -42,7 +85,7 @@ namespace EdabitTDD
 
        */
 
-        public static float[] GetQuadraticVertex(float a, float b, float c)
+        public float[] GetQuadraticVertex(float a, float b, float c)
         {
             float expectedX = -b / (2 * a);
             float expectedY = a * (expectedX * expectedX) + b * expectedX + c;
@@ -50,7 +93,7 @@ namespace EdabitTDD
             return new float[] { expectedX, expectedY };
         }
 
-        public static float[] ApprochResult(float[] result)
+        public float[] ApprochResult(float[] result)
         {
             result[0] = (float)Math.Round(result[0], 2);
             result[1] = (float)Math.Round(result[1], 2);
@@ -66,7 +109,7 @@ namespace EdabitTDD
 
         */
 
-        public static string[] GetStringPermutationsArray(string inputString)
+        public string[] GetStringPermutationsArray(string inputString)
         {
             List<string> result = new List<string>();
 
@@ -77,7 +120,7 @@ namespace EdabitTDD
             return result.ToArray();
         }
 
-        public static List<string> GetStringPermutations(string inputString, int position, List<string> list)
+        public List<string> GetStringPermutations(string inputString, int position, List<string> list)
         {
             if (position == 0)
             {
@@ -117,7 +160,7 @@ namespace EdabitTDD
         Return false otherwise. The character * is a wildcard, so it can take the place of any character.
 
         */
-        public static bool ContainsEachOther(string firstString, string secondString)
+        public bool ContainsEachOther(string firstString, string secondString)
         {
             string shorterString;
             string subString;
@@ -158,7 +201,7 @@ namespace EdabitTDD
 
         */
 
-        public static int[] GetFinalPosition(int[] movements)
+        public int[] GetFinalPosition(int[] movements)
         {
             int[] finalPosition = new int[] { 0, 0 };
             for (int i = 0; i < movements.Length; i++)

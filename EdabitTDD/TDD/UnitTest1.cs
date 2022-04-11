@@ -21,7 +21,7 @@ namespace TDD
         [TestCase(5, 300)]
         public void Test_ConvertToSeconds_IntSeconds(int minutes, int resultSeconds)
         {
-            Assert.AreEqual(Methods.Convert(minutes), resultSeconds);
+            Assert.AreEqual(_methods.Convert(minutes), resultSeconds);
         }
 
         //Stuttering Function
@@ -86,7 +86,7 @@ namespace TDD
         [TestCase(4,24)]
         public void Test_GivenAnNumber_ReturnFactorial(int number, int expectedFactorial)
         {
-            int factorial = Methods.RecursiveFactorial(number);
+            int factorial = _methods.RecursiveFactorial(number);
             Assert.AreEqual(factorial, expectedFactorial);
         }
 
@@ -107,14 +107,14 @@ namespace TDD
         public void Test_GivenParametersForQuadraticFunction_ReturnVertex(float a, float b, float c, float[] expectedResult)
         {
 
-            Assert.AreEqual(Methods.GetQuadraticVertex(a, b, c), expectedResult);
+            Assert.AreEqual(_methods.GetQuadraticVertex(a, b, c), expectedResult);
         }
 
         [TestCase(2, 3, 6, new float[] { -0.75f, 4.88f })]
         public void Test_GivenParametersForQuadraticFunction_ReturnValuesApproched(float a, float b, float c, float[] expectedApprochedResult)
         {
-            float[] result = Methods.GetQuadraticVertex(a, b, c);
-            float[] resultApproched = Methods.ApprochResult(result);
+            float[] result = _methods.GetQuadraticVertex(a, b, c);
+            float[] resultApproched = _methods.ApprochResult(result);
             Assert.AreEqual(expectedApprochedResult, resultApproched);
         }
 
@@ -130,7 +130,7 @@ namespace TDD
         [TestCase("NOT", new string[] { "NOT", "NTO", "ONT", "OTN", "TNO", "TON" })]
         public void Test_GivenStringInput_ReturnPermutations(string inputString, string[] expectedPermutations)
         {
-            Assert.AreEqual(Methods.GetStringPermutationsArray(inputString), expectedPermutations);
+            Assert.AreEqual(_methods.GetStringPermutationsArray(inputString), expectedPermutations);
         }
 
         [TestCase("hola que tal", "tal", true)]
@@ -139,7 +139,7 @@ namespace TDD
         [TestCase("hey", "que tal h*y", true)]
         public void Test_GivenTwoStringInput_ReturnTrueIfOneContainsTheOther(string firstArg, string secondArg, bool expectedResult)
         {
-            bool result = Methods.ContainsEachOther(firstArg, secondArg);
+            bool result = _methods.ContainsEachOther(firstArg, secondArg);
 
             Assert.AreEqual(expectedResult, result);
         }
@@ -157,7 +157,7 @@ namespace TDD
         [TestCase(new int[] { 30, 20, 15, 10 }, new int[] { 10, 15 })]
         public void Test_GivenAnArrayOfMovement_CalculateFinalPosition(int[] movements, int[] expectedFinalPosition)
         {
-            int[] finalPosition = Methods.GetFinalPosition(movements);
+            int[] finalPosition = _methods.GetFinalPosition(movements);
             Assert.AreEqual(expectedFinalPosition, finalPosition);
         }
 
