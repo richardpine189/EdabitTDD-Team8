@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdabitTDD", "EdabitTDD\EdabitTDD.csproj", "{1A73EE01-BD61-4DC4-8954-E27C7EA52CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD", "TDD\TDD.csproj", "{28A40968-D6C8-443F-9947-CD75881B0EF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A73EE01-BD61-4DC4-8954-E27C7EA52CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A73EE01-BD61-4DC4-8954-E27C7EA52CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A73EE01-BD61-4DC4-8954-E27C7EA52CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A73EE01-BD61-4DC4-8954-E27C7EA52CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A40968-D6C8-443F-9947-CD75881B0EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A40968-D6C8-443F-9947-CD75881B0EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A40968-D6C8-443F-9947-CD75881B0EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A40968-D6C8-443F-9947-CD75881B0EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAB899B0-553D-4FA7-ADDE-850EAC863A0E}
+	EndGlobalSection
+EndGlobal
