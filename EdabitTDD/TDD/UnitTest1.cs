@@ -6,11 +6,12 @@ namespace TDD
     [TestFixture]
     public class Tests
     {
-        TDDAction tddAction;
+        Methods _methods;
         [SetUp]
         public void Setup()
         {
-            tddAction = new TDDAction();
+            _methods = new Methods();
+            ActionClass actionClass = new ActionClass(); // Refactorizar
         }
 
         [TestCase(1, 60)]
@@ -36,7 +37,7 @@ namespace TDD
         {
 
             //Act
-            string finalString = tddAction.Stuttering(inputWord);
+            string finalString = _methods.Stuttering(inputWord);
             //Assert
             Assert.AreEqual(finalString, expectedString);
         }
@@ -49,7 +50,7 @@ namespace TDD
         [TestCase("", new int[]{0, 0})]
         public void Test_GivenAStringWithHashAndPlus_ReturnAmount(string inputString, int[] expectedArray)
         {
-            int[] finalArray = tddAction.CountHashesAndPluses(inputString);
+            int[] finalArray = _methods.CountHashesAndPluses(inputString);
             Assert.AreEqual(expectedArray, finalArray);
         }
 
@@ -65,7 +66,7 @@ namespace TDD
         [TestCase("Asistencia", 5)]
         public void Test_GivenAWord_RetournVowelCount(string inputString, int expectedCount)
         {
-            int vowelCount = tddAction.HowManyVowel(inputString);
+            int vowelCount = _methods.HowManyVowel(inputString);
             Assert.AreEqual(expectedCount, vowelCount);
         }
 
@@ -79,7 +80,7 @@ namespace TDD
         [TestCase(-9, -6, -6)]
         public void Test_GivenTwoNumbers_GetNextMultipleOfB(int firstNumber, int secondNumber, int expectedNumber)
         {
-            int? resultNumber = tddAction.NextMultipleOfB(firstNumber, secondNumber);
+            int? resultNumber = _methods.NextMultipleOfB(firstNumber, secondNumber);
             Assert.AreEqual(resultNumber, expectedNumber);
         }
         [TestCase(4,24)]
@@ -159,6 +160,113 @@ namespace TDD
             int[] finalPosition = Methods.GetFinalPosition(movements);
             Assert.AreEqual(expectedFinalPosition, finalPosition);
         }
+
+        [TestCase(1, 60)]
+        [TestCase(2, 120)]
+        [TestCase(3, 180)]
+        [TestCase(4, 240)]
+
+        public void Test_ConvertMinutesIntoSeconds_IntSeconds(int minutes, int secondsResult)
+        {
+            //Arrange - Given
+
+            //Act - When
+
+            //Assert - Then
+            Assert.AreEqual(ActionClass.MinutesToSeconds(minutes), secondsResult);
+        }
+
+        //Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+        [Test]
+        public void Test_GivenTwoNumbersAndSumThem_ReturnTrueLessThan100()
+        {
+            int firstNumber = 5;
+            int secondNumber = 7;
+            bool isTrue = false;
+            isTrue = ActionClass.LessThan100(firstNumber, secondNumber);
+            Assert.IsTrue(isTrue);
+        }
+        [Test]
+        public void Test_GivenTwoNumbersAndSumThem_ReturnFalseMoreThan100()
+        {
+
+            int firstNumber = 95;
+            int secondNumber = 7;
+            bool isFalse = ActionClass.LessThan100(firstNumber, secondNumber);
+            Assert.IsFalse(isFalse);
+        }
+
+        // Create a function that reverses a boolean value.
+
+        [Test]
+        public void Test_GivenAFalseBoolean_ReturnTrue()
+        {
+            bool myBool = false;
+            Assert.IsTrue(ActionClass.FlipTheBoolean(myBool));
+        }
+        [Test]
+        public void Test_GivenATrueBoolean_ReturnFalse()
+        {
+            bool myBool = true;
+            Assert.IsFalse(ActionClass.FlipTheBoolean(myBool));
+        }
+
+        //Write a function that returns the string "something" joined with a space " " and the given argument a.
+
+        [TestCase("papa", "something papa")]
+        [TestCase("yesica", "something yesica")]
+        [TestCase("tomas", "something tomas")]
+        [TestCase("genaro", "something genaro")]
+
+        public void TestString_GivenAnString_ReturnSomethingSpaceString(string inputValue, string expectedValue)
+        {
+
+            string resultString = ActionClass.ReturnSomethingToMe(inputValue);
+
+            Assert.AreEqual(expectedValue, resultString);
+        }
+
+        //Create a function that takes the age in years and returns the age in days.
+
+        [TestCase(1, 365)]
+        [TestCase(10, 3650)]
+        [TestCase(30, 10950)]
+        [TestCase(50, 18250)]
+        public void TestAge_GivenAmountOfAge_ReturnAmountOfDays(int inputAgeValue, int daysResultExpected)
+        {
+
+            int days = ActionClass.AgeToDaysIn365EachYear(inputAgeValue);
+
+            Assert.AreEqual(daysResultExpected, days);
+        }
+
+        /*Given an n-sided regular polygon n, return the total sum of internal angles (in degrees).
+         *
+         * n will always be greater than 2.
+         * The formula(n - 2) x 180 gives the sum of all the measures of the angles of an n-sided polygon.
+        */
+
+        /*
+         * Create a function that takes an integer and returns the factorial of that integer.
+         * That is, the integer multiplied by all positive lower integers.
+         */
+
+        /*Multiply by Length
+         * Create a function to multiply all of the values in an array by the amount of values in the given array.
+         * All of the values given are numbers.
+         * All arrays will have at least one element.
+         * Don't forget to return the result.
+        */
+
+        /*Shuffle the Name
+         * Create a function that accepts a string (of a person's first and last name)
+         * and returns a string with the first and last name swapped.
+         *
+         *There will be exactly one space between the first and last name.
+         */
+
+
     }
 
 
