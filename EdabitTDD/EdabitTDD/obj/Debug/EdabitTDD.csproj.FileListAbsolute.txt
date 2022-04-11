@@ -5,3 +5,10 @@ C:\Users\Ricardo\source\repos\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.csproj.Ass
 C:\Users\Ricardo\source\repos\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.csproj.CoreCompileInputs.cache
 C:\Users\Ricardo\source\repos\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.exe
 C:\Users\Ricardo\source\repos\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.pdb
+C:\Users\Theo\Desktop\EdabitTDD-Team8\EdabitTDD\EdabitTDD\bin\Debug\EdabitTDD.exe.config
+C:\Users\Theo\Desktop\EdabitTDD-Team8\EdabitTDD\EdabitTDD\bin\Debug\EdabitTDD.exe
+C:\Users\Theo\Desktop\EdabitTDD-Team8\EdabitTDD\EdabitTDD\bin\Debug\EdabitTDD.pdb
+C:\Users\Theo\Desktop\EdabitTDD-Team8\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.csproj.AssemblyReference.cache
+C:\Users\Theo\Desktop\EdabitTDD-Team8\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.csproj.CoreCompileInputs.cache
+C:\Users\Theo\Desktop\EdabitTDD-Team8\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.exe
+C:\Users\Theo\Desktop\EdabitTDD-Team8\EdabitTDD\EdabitTDD\obj\Debug\EdabitTDD.pdb

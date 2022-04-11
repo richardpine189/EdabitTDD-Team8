@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\TDD\\TDD.csproj": {}
+    "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\TDD\\TDD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj": {
+    "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj",
+        "projectUniqueName": "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj",
         "projectName": "EdabitTDD",
-        "projectPath": "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj",
+        "projectPath": "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -19,17 +19,17 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\TDD\\TDD.csproj": {
+    "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\TDD\\TDD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\TDD\\TDD.csproj",
+        "projectUniqueName": "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\TDD\\TDD.csproj",
         "projectName": "TDD",
-        "projectPath": "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\TDD\\TDD.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\TDD\\obj\\",
+        "projectPath": "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\TDD\\TDD.csproj",
+        "packagesPath": "C:\\Users\\Theo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\TDD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Theo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,8 +43,8 @@
           "net472": {
             "targetAlias": "net472",
             "projectReferences": {
-              "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj": {
-                "projectPath": "C:\\Users\\Ricardo\\source\\repos\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj"
+              "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj": {
+                "projectPath": "C:\\Users\\Theo\\Desktop\\EdabitTDD-Team8\\EdabitTDD\\EdabitTDD\\EdabitTDD.csproj"
               }
             }
           }
@@ -72,7 +72,7 @@
               "version": "[3.16.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
